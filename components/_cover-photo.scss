@@ -1,0 +1,34 @@
+@mixin cover-photo($vertical-image, $horizontal-image: null, $gradient: null) {
+  $horizontal-image: $vertical-image !default;
+  $gradient: linear-gradient(to bottom,
+                             rgba($tws-medium-gray, 0),
+                             rgba($dark-gray, 20) 100%) !default;
+
+  @include background-image($gradient, $vertical-image);
+
+  @include media($tablet) {
+    @include background-image($gradient, $horizontal-image);
+  }
+
+  background-position: 50% 50%, 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+%vertical-center-flex-container {
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(row);
+  @include justify-content(center);
+}
+
+%vertical-center-box {
+  @include flex(1);
+  text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+  max-width: 80%;
+  @include media($tablet) {
+    max-width: 50%;
+  }
+}

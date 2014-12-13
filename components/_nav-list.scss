@@ -16,7 +16,6 @@ $uncollapse-at: $desktop;
     float: right;
     max-height: none;
   }
-
 }
 
 .nav-links {
@@ -29,6 +28,7 @@ $uncollapse-at: $desktop;
   line-height: $base-line-height * 1.25;
   text-transform: uppercase;
   font-weight: 700;
+  a { color: $tws-medium-gray; }
 
   @include media($uncollapse-at) {
     float: left;

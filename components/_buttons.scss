@@ -1,0 +1,56 @@
+%button {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-button-color;
+  border: none;
+  border-radius: $base-border-radius;
+  color: white;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $hover-button-color;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+@mixin button-color($base-color, $hover-color: null) {
+  $hover-color: darken($base-color, 5) !default;
+  background-color: $base-color;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+button, input[type="submit"] {
+  @extend %button;
+
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &.green {
+    @include button-color($tws-green);
+  }
+
+  &.red {
+    @include button-color($tws-red);
+  }
+
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.wide {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}

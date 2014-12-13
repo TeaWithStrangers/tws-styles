@@ -10,4 +10,11 @@
 
 @import "components/header";
 @import "components/nav-list";
-@import "components/full-width-image-with-text";
+@import "components/buttons";
+@import "components/cover-photo";
+
+.container {
+    @include outer-container;
+    @include box-sizing(border-box);
+    @include padding(0 $container-gutter-padding);
+}
