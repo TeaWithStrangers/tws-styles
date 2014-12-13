@@ -14,7 +14,7 @@
 @import "components/cover-photo";
 
 .container {
-    @include outer-container;
-    @include box-sizing(border-box);
-    @include padding(0 $container-gutter-padding);
+  @include outer-container;
+  @include box-sizing(border-box);
+  @include padding(0 $container-gutter-padding);
 }
