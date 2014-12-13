@@ -1,7 +1,7 @@
 //Normalisation, Bourbon mixins, and Neat grid
-@import "./bower_components/normalize-css/normalize.css";
-@import "./bower_components/bourbon/dist/bourbon";
-@import "./bower_components/neat/app/assets/stylesheets/neat";
+@import "bower_components/normalize-css/normalize";
+@import "bower_components/bourbon/dist/bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
 
 // Start of TWS imports
 @import "base/variables";
