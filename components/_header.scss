@@ -1,0 +1,23 @@
+header {
+  @include clearfix();
+  text-align: left;
+
+  .wrapper {
+    @include box-sizing(border-box);
+    @include outer-container;
+
+    padding: 0.8em 1em;
+    border-bottom: 1px solid $light-gray;
+
+    @include media($desktop) {
+      padding: 0.8em 0em;
+    }
+  }
+}
+
+.tws-logo-type {
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include media($desktop) { float: left; }
+}

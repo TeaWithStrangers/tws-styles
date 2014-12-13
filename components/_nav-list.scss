@@ -1,0 +1,38 @@
+$uncollapse-at: $desktop;
+
+.nav-list {
+  @include transition(max-height 1.0s);
+  @include padding(0);
+  @include margin(0);
+
+  overflow: hidden;
+  max-height: 0;
+
+  &.open {
+    max-height: 600px;
+  }
+
+  @include media($uncollapse-at) {
+    float: right;
+    max-height: none;
+  }
+
+}
+
+.nav-links {
+  @include padding(0);
+  @include margin(0);
+}
+
+.nav-link-item {
+  list-style-type: none;
+  line-height: $base-line-height * 1.25;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @include media($uncollapse-at) {
+    float: left;
+    padding-left: $base-font-size;
+    height: 30px;
+  }
+}

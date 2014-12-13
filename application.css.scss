@@ -1,5 +1,13 @@
+//Normalisation, Bourbon mixins, and Neat grid
 @import "./bower_components/normalize-css/normalize.css";
 @import "./bower_components/bourbon/dist/bourbon";
 @import "./bower_components/neat/app/assets/stylesheets/neat";
-@import "components/nav-list";
 
+// Start of TWS imports
+@import "base/variables";
+@import "base/media-queries";
+@import "base/typography";
+
+@import "components/header";
+@import "components/nav-list";
+@import "components/full-width-image-with-text";
