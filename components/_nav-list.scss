@@ -13,7 +13,6 @@ $uncollapse-at: $desktop;
   }
 
   @include media($uncollapse-at) {
-    float: right;
     max-height: none;
   }
 }

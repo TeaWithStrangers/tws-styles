@@ -7,6 +7,12 @@ header {
     padding-bottom: $vpadding;
     border-bottom: 1px solid $light-gray;
   }
+
+  .nav-list {
+    @include media($desktop) {
+      float: right;
+    }
+  }
 }
 
 .tws-logo-type {
