@@ -35,6 +35,7 @@ button, input[type="submit"] {
 
   text-transform: uppercase;
   font-weight: 400;
+  a { color: $tws-white; }
 
   &.green {
     @include button-color($tws-green);
