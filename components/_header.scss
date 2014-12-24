@@ -19,5 +19,19 @@ header {
   font-weight: 300;
   text-transform: uppercase;
   cursor: pointer;
+  color: #333;
   @include media($desktop) { float: left; }
+}
+
+.menu-expando {
+  float: right;
+  line-height: 30px;
+
+  &:before {
+    content: "\2261";
+  }
+
+  @include media($desktop) {
+    display: none;
+  }
 }

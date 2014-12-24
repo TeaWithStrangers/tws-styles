@@ -32,6 +32,6 @@ $uncollapse-at: $desktop;
   @include media($uncollapse-at) {
     float: left;
     padding-left: $base-font-size;
-    height: 30px;
+    line-height: 30px;
   }
 }
