@@ -15,6 +15,9 @@
 @import "components/cover-photo";
 @import "components/copy-section";
 
+//Blog Import
+@import "components/blog/blog";
+
 .container {
   @include outer-container;
   @include box-sizing(border-box);

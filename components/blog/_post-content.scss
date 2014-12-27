@@ -1,0 +1,14 @@
+.post {
+  @include media($tablet) {
+    @include span-columns(10);
+    @include shift(1);
+    padding: 0 2em;
+  }
+}
+
+.post-body p {
+  font-size: 1.5em;
+}
+
+.post-read-more {
+}
