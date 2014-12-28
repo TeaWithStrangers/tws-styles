@@ -1,3 +1,9 @@
+/*
+Base class for all buttons in TWS projects.
+
+Any instances of a button that do not use <button> or <input type="submit">
+should @extend from this class.
+*/
 %button {
   -webkit-font-smoothing: antialiased;
   background-color: $base-button-color;
@@ -21,6 +27,14 @@
   }
 }
 
+/*
+Sets a button's background color for regular and hover states. The hover
+state background will be 5% darker than the base if a $hover-color property is
+not supplied.
+
+$base-color  - The base color
+$hover-color - (Optional): The :hover color 
+*/
 @mixin button-color($base-color, $hover-color: null) {
   $hover-color: darken($base-color, 5) !default;
   background-color: $base-color;
@@ -30,6 +44,17 @@
   }
 }
 
+/* 
+The base button for all forms and calls-to-action. Text is centred by default.
+
+:hover - The hover state
+:active - The depressed state
+.green - Button with a base colour of $tws-green
+.red - Button with a base of $tws-red
+.full-width - Stretches to fill width of parent element
+.wide - Adds 2.5em of L+R padding
+
+*/
 button, input[type="submit"] {
   @extend %button;
 
