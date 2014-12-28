@@ -1,5 +1,10 @@
 .copy-section {
   @include media($tablet) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  @include media($desktop) {
     @include span-columns(8);
     @include shift(2);
   }
