@@ -21,8 +21,17 @@ h6 {
   margin: 0;
 }
 
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 h1 {
   font-size: $h1-font-size;
+  font-weight: 900;
 }
 
 h2 {
