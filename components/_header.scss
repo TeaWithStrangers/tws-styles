@@ -2,7 +2,7 @@ header {
   @include clearfix();
 
   .container {
-    $vpadding: 0.8em;
+    $vpadding: 0.25em;
     padding-top: $vpadding;
     padding-bottom: $vpadding;
     border-bottom: 1px solid $light-gray;
@@ -17,17 +17,19 @@ header {
 
 .tws-logo-type {
   font-family: $prenton;
-  font-size: 1.5em;
+  font-size: 1.0em;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #333;
-  @include media($desktop) { float: left; }
+  @include media($desktop) {
+    float: left; 
+    line-height: 39px;
+  }
 }
 
 .menu-expando {
   float: right;
-  line-height: 45.9px;
   cursor: pointer;
 
   &:before {

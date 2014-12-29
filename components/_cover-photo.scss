@@ -26,7 +26,7 @@
 
 %vertical-center-box {
   @include flex(1);
-  max-width: 80%;
+  max-width: 100%;
 
   @include media($tablet) {
     max-width: 70%;
@@ -50,7 +50,7 @@
 
 .cover-photo-body {
   @extend %cover-photo-text;
-  font-size: 1.325em;
+  font-size: 1.25em;
 }
 
 .cover-photo-cta {
