@@ -30,9 +30,8 @@
 
   @include media($tablet) {
     width: 70%;
-    max-width: 600px;
+    max-width: 540px;
   }
-
 }
 
 %cover-photo-text {
@@ -49,11 +48,13 @@
 
 .cover-photo-body {
   @extend %cover-photo-text;
-  font-size: 1.25em;
+  @include media($tablet) {
+    font-size: 1.15em;
+  }
 }
 
 .cover-photo-cta {
   margin-top: 1.0em;
   @include padding(1em 2.5em);
-  width: 60%;
+  width: 70%;
 }
