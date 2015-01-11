@@ -1,7 +1,7 @@
 // Gratuitously lifted from Bitters (bitters.bourbon.io)
 
 body {
-  @include font-feature-settings("kern","liga","frac", "pnum");
+  @include font-feature-settings("kern","liga","frac","pnum");
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
@@ -18,11 +18,19 @@ h5,
 h6 {
   font-family: $header-font-family;
   line-height: $header-line-height;
-  margin: 0;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: $h1-font-size;
+  font-weight: 900;
 }
 
 h2 {

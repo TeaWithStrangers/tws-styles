@@ -5,6 +5,8 @@ $uncollapse-at: $desktop;
   @include padding(0);
   @include margin(0);
 
+  font-family: $proxima-nova;
+
   overflow: hidden;
   max-height: 0;
 
@@ -23,8 +25,9 @@ $uncollapse-at: $desktop;
 }
 
 .nav-link-item {
+  font-size: 0.8em;
   list-style-type: none;
-  line-height: $base-line-height * 1.25;
+
   text-transform: uppercase;
   font-weight: 700;
   a { color: $tws-medium-gray; }
@@ -32,6 +35,6 @@ $uncollapse-at: $desktop;
   @include media($uncollapse-at) {
     float: left;
     padding-left: $base-font-size;
-    line-height: 30px;
+    line-height: 39px;
   }
 }

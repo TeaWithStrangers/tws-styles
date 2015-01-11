@@ -14,7 +14,7 @@ $border-gap: 0.35em;
   a {
     text-transform: uppercase;
     font-weight: 700;
-    color: #333; 
+    color: #333;
   }
 
   &:last-child:after {
@@ -41,11 +41,10 @@ $border-gap: 0.35em;
   a { color: #333; }
 
   @include media($tablet) {
-    font-size: 4em;
-    margin: 0.25em 0;
+    margin: 0.5em 0 0.25em;
   }
 }
 
 .post-metadata {
-  margin: 1em 0;
+  margin: 0em 0 1em;
 }
