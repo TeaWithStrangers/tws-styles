@@ -19,6 +19,16 @@
 //Blog Import
 @import "components/blog/blog";
 
+.wrapper {
+  @include display(flex);
+  @include flex-direction(column);
+  min-height: 100vh;
+}
+
+.wrapper-content {
+  @include flex(1);
+}
+
 .container {
   @include outer-container;
   @include box-sizing(border-box);
