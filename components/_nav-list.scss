@@ -5,7 +5,7 @@ $uncollapse-at: $desktop;
   @include padding(0);
   @include margin(0);
 
-  font-family: $proxima-nova;
+  font-family: $gibson;
 
   overflow: hidden;
   max-height: 0;
@@ -29,7 +29,7 @@ $uncollapse-at: $desktop;
   list-style-type: none;
 
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   a { color: $tws-medium-gray; }
 
   @include media($uncollapse-at) {

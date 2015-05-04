@@ -1,10 +1,11 @@
 // Font Families
 $proxima-nova: "proxima-nova", "Proxima Nova", "Helvetica Neue", sans-serif;
 $prenton: "prenton", "Helvetica Neue", sans-serif;
+$gibson: "Gibson", "Helvetica Neue", sans-serif;
 
 // Typography
-$base-font-family: "Georgia", Georgia, serif;
-$header-font-family: $prenton;
+$base-font-family: $gibson;
+$header-font-family: $gibson;
 
 // Font Sizes
 $base-font-size: 18px;
@@ -39,6 +40,10 @@ $tws-footer-gray: #1D1D1D;
 // Background Color
 $base-background-color: white;
 
+// Redesign Colours
+$tws-yellow: #F7BF4D;
+$tws-orange: #EF6236;
+
 // Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $blue;
@@ -52,6 +57,9 @@ $hover-button-color: $hover-link-color;
 // Border color
 $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
+
+// Buttons
+$base-button-radius: 10px;
 
 // Forms
 $form-border-color: $base-border-color;
