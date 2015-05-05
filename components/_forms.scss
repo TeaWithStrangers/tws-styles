@@ -5,5 +5,9 @@ form {
     padding: 1em;
     width: 100%;
     max-width: 540px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 }
