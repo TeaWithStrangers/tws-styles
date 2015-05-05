@@ -10,10 +10,14 @@
 @import "base/typography";
 @import "base/enhanced_typography";
 
+// Base & Layout Components
 @import "components/header";
 @import "components/footer";
 @import "components/nav-list";
 @import "components/buttons";
+@import "components/forms";
+
+// Block Components
 @import "components/cover-photo";
 @import "components/copy-section";
 @import "components/press-list";
