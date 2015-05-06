@@ -10,12 +10,14 @@ $header-font-family: $gibson;
 // Font Sizes
 $base-font-size: 18px;
 $quote-font-size: $base-font-size * 0.9;
-$h1-font-size: 3.25em;
-$h2-font-size: 2.5em;
-$h3-font-size: 1.75em;
-$h4-font-size: 1.2em;
+$h1-font-size: 2.5em;
+$h1-dark-font-size: 1.875em;
+$h2-font-size: 1.5em;
+$h3-font-size: 1em;
+$h4-font-size: 1.125em;
 $h5-font-size: 1em;
 $h6-font-size: .8em;
+
 
 // Line height
 $base-line-height: 1.625;
@@ -29,7 +31,7 @@ $base-z-index: 0;
 // Colors
 $blue: #477DCA;
 $dark-gray: #333;
-$medium-gray: #999;
+$medium-gray: #5C5C5C;
 $light-gray: #DDD;
 $tws-medium-gray: #929292;
 $tws-red: #B53D39;

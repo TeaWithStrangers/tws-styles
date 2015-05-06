@@ -18,27 +18,32 @@ h5,
 h6 {
   font-family: $header-font-family;
   line-height: $header-line-height;
+  font-weight: 600;
 }
 
 h4,
 h5,
 h6 {
   font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 h1 {
   font-size: $h1-font-size;
-  font-weight: 900;
+}
+
+h1.dark {
+  font-size: $h1-dark-font-size;
+  color: $medium-gray;
 }
 
 h2 {
   font-size: $h2-font-size;
+  color: $tws-orange;
 }
 
 h3 {
   font-size: $h3-font-size;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -55,6 +60,15 @@ h6 {
 
 p {
   margin: 0 0 ($base-spacing / 2);
+}
+
+button {
+  @extend h3;
+  color: $tws-white;
+  letter-spacing: 2px;
+  padding: 1.5em 4em;
+  min-width: 300px;
+  width: auto;
 }
 
 a {

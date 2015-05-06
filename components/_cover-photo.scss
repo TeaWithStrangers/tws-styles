@@ -30,14 +30,14 @@
 
   @include media($tablet) {
     width: 70%;
-    max-width: 540px;
+    max-width: 700px;
   }
 }
 
 %cover-photo-text {
   color: $tws-white;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.25em;
 }
 
 /* Cover Photo Styles */
@@ -63,6 +63,10 @@
   font-weight: 600;
 }
 
+.cover-photo-sub {
+  @extend %cover-photo-text;
+}
+
 .cover-photo-body {
   @extend %cover-photo-text;
   @include media($tablet) {
@@ -73,6 +77,6 @@
 .cover-photo-cta {
   margin-top: 1.0em;
   @include padding(1.75em 1.5em);
-  width: 80%;
+  width: 50%;
   font-weight: 600;
 }
