@@ -1,4 +1,4 @@
-$uncollapse-at: $tablet;
+$uncollapse-at: $desktop;
 
 .nav-list {
   @include transition(max-height 1.0s);
@@ -29,6 +29,7 @@ $uncollapse-at: $tablet;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+  text-align: right;
   a { color: $tws-white; }
 
   @include media($uncollapse-at) {

@@ -1,6 +1,25 @@
 footer {
-  background-color: $tws-footer-gray;
-  padding: 1em 0;
+  background-color: $tws-yellow;
+  padding: 2em 0;
+  overflow: auto;
+  .footer-container {
+    @include span-columns(10 of 12);
+    @include shift(1);
+    .ethos-rant {
+      @include span-columns(5 of 10);
+      color: $tws-white;
+    }
+    .admin-links {
+      @include span-columns(5 of 10);
+      font-family: $gibson;
+      font-weight: 600;
+      text-align: right;
+      a {
+        display: block;
+        color: $tws-white;
+      }
+    }
+  }
 
   .nav-list {
     text-align: center;

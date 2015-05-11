@@ -8,7 +8,7 @@ header {
   }
 
   .nav-list {
-    @include media($tablet) {
+    @include media($desktop) {
       float: right;
     }
   }
@@ -19,7 +19,8 @@ header {
   font-size: 2em;
   font-weight: 400;
   color: $tws-white;
-  @include media($tablet) {
+
+  @include media($desktop) {
     float: left; 
     line-height: 39px;
   }
@@ -33,7 +34,7 @@ header {
     content: "\2261";
   }
 
-  @include media($tablet) {
+  @include media($desktop) {
     display: none;
   }
 }

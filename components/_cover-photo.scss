@@ -61,12 +61,15 @@
 .cover-photo-lede {
   @extend %cover-photo-text;
   font-weight: 600;
+  @include margin(0 0 $base-font-size/2 0);
 }
 
-.cover-photo-sub {
+.cover-photo-subtext {
   @extend %cover-photo-text;
   font-size: 1.125em;
   font-weight: 400;
+  display: block;
+  @include margin(0 0 $base-font-size*2 0);
 }
 
 .cover-photo-body {
@@ -77,9 +80,8 @@
 }
 
 .cover-photo-cta {
-  margin-top: 1.0em;
-  width: 50%;
-  @include media($mobile-only) {
-    width: 80%;
+  width: 80%;
+  @include media($tablet) {
+    width: 50%;
   }
 }
