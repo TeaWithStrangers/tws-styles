@@ -2,14 +2,13 @@ header {
   @include clearfix();
 
   .container {
-    $vpadding: 0.25em;
+    $vpadding: 0.5em;
     padding-top: $vpadding;
     padding-bottom: $vpadding;
-    border-bottom: 1px solid $light-gray;
   }
 
   .nav-list {
-    @include media($desktop) {
+    @include media($tablet) {
       float: right;
     }
   }
@@ -17,12 +16,10 @@ header {
 
 .tws-logo-type {
   font-family: "Nanum Pen Script";
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #333;
-  @include media($desktop) {
+  color: $tws-white;
+  @include media($tablet) {
     float: left; 
     line-height: 39px;
   }
@@ -36,7 +33,7 @@ header {
     content: "\2261";
   }
 
-  @include media($desktop) {
+  @include media($tablet) {
     display: none;
   }
 }
