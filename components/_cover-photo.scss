@@ -60,16 +60,16 @@
 
 .cover-photo-lede {
   @extend %cover-photo-text;
-  font-weight: 600;
   @include margin(0 0 $base-font-size/2 0);
+  font-weight: 600;
 }
 
 .cover-photo-subtext {
   @extend %cover-photo-text;
+  @include margin(0 0 $base-font-size*2 0);
+  display: block;
   font-size: 1.125em;
   font-weight: 400;
-  display: block;
-  @include margin(0 0 $base-font-size*2 0);
 }
 
 .cover-photo-body {
@@ -81,6 +81,7 @@
 
 .cover-photo-cta {
   width: 80%;
+
   @include media($tablet) {
     width: 50%;
   }

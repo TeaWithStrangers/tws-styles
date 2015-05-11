@@ -29,11 +29,6 @@ $header-line-height: 1.25;
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
-.clear-margin { margin: 0; }
-.spacebelow-x-2 { margin-bottom: $base-font-size/2 !important; }
-.spacebelow-x { margin-bottom: $base-font-size !important; } // Nick, cool for these to be here? Variables? Or mixins?
-.spacebelow-2x { margin-bottom: $base-font-size*2 !important; }
-.spacebelow-3x { margin-bottom: $base-font-size*3 !important; }
 
 // Colors
 $blue: #477DCA;
