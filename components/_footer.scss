@@ -1,24 +1,12 @@
 footer {
   background-color: $tws-yellow;
-  padding: 2em 0;
   overflow: auto;
+  padding: 2em 0;
+
   .footer-container {
     @include span-columns(10 of 12);
     @include shift(1);
-    .ethos-rant {
-      @include span-columns(5 of 10);
-      color: $tws-white;
-    }
-    .admin-links {
-      @include span-columns(5 of 10);
-      font-family: $gibson;
-      font-weight: 600;
-      text-align: right;
-      a {
-        display: block;
-        color: $tws-white;
-      }
-    }
+
   }
 
   .nav-list {
@@ -30,4 +18,35 @@ footer {
     display: inline-block;
     float: none;
   }
+}
+
+.ethos-rant {
+  color: $tws-white;
+
+  @include media($tablet) {
+    @include span-columns(5 of 10);
+  }
+}
+
+.admin-links {
+  font-family: $gibson;
+  font-weight: 600;
+  text-align: center;
+  @include margin(0 0 1.5em 0);
+
+  a {
+    color: $tws-white;
+    display: inline-block;
+    padding: 0 1em;
+  }
+
+  @include media($tablet) {
+    @include span-columns(5 of 10);
+    text-align: left;
+
+    a {
+      display: block;
+    }
+  }
+  
 }
