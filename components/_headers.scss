@@ -10,7 +10,7 @@ h1.dark {
 
   font-size: $h1-dark-font-size;
   color: $medium-gray;
-  @include margin(0 0 $base-font-size*1.5)
+  margin-bottom: $base-font-size*1.5;
 }
 
 h3.capitalize {

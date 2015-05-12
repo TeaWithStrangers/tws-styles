@@ -1,8 +1,9 @@
 header {
   @include clearfix();
+  background: rgba($tws-yellow, .87);
 
   .container {
-    $vpadding: 0.5em;
+    $vpadding: 1em;
     padding-top: $vpadding;
     padding-bottom: $vpadding;
   }
