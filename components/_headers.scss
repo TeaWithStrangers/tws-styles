@@ -29,4 +29,8 @@ h3.capitalize {
 	@extend h3;
 
 	text-transform: uppercase;	
+
+	&.center {
+		text-align: center;
+	}
 }
