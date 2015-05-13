@@ -1,5 +1,11 @@
 $uncollapse-at: $desktop;
 
+a.tws-logo-type {
+  img {
+    height: $base-font-size*1.5;
+  }
+}
+
 .nav-list {
   @include transition(max-height 1.0s);
   @include padding(0);
