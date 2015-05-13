@@ -42,7 +42,14 @@
 
 /* Cover Photo Styles */
 .cover-photo {
+  
+  &.city-banner {
+    .content {
+      background-color: rgba($tws-yellow, .75);
+    }
+  }
   .content {
+
     @extend %vertical-center-flex-container;
 
     @include padding(50px 0);
@@ -62,6 +69,23 @@
   @extend %cover-photo-text;
   margin-bottom: $base-font-size/2;
   font-weight: 600;
+}
+
+.city-banner {
+  margin-bottom: 2em;
+}
+
+h1.city-title {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+span.city-subtext {
+  @extend %cover-photo-text;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: $base-font-size;
 }
 
 .cover-photo-subtext {
