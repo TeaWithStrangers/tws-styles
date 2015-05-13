@@ -42,7 +42,7 @@
 
 /* Cover Photo Styles */
 .cover-photo {
-  
+
   &.city-banner {
     margin-bottom: $base-font-size*3;
     .content {
@@ -113,10 +113,10 @@ span.city-subtext {
 }
 
 .city-container {
-  
+
   @include span-columns(8 of 12);
   @include shift(2);
-  
+
   h2 {
     margin-bottom: $base-font-size;
   }
