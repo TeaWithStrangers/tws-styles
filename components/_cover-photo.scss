@@ -42,8 +42,9 @@
 
 /* Cover Photo Styles */
 .cover-photo {
-  
+
   &.city-banner {
+    margin-bottom: $base-font-size*3;
     .content {
       background-color: rgba($tws-yellow, .75);
     }
@@ -108,5 +109,15 @@ span.city-subtext {
 
   @include media($tablet) {
     width: 50%;
+  }
+}
+
+.city-container {
+
+  @include span-columns(8 of 12);
+  @include shift(2);
+
+  h2 {
+    margin-bottom: $base-font-size;
   }
 }

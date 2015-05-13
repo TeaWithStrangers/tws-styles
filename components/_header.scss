@@ -22,7 +22,7 @@ header {
   color: $tws-white;
 
   @include media($desktop) {
-    float: left; 
+    float: left;
     line-height: 39px;
   }
 }
