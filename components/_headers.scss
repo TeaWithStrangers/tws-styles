@@ -5,12 +5,24 @@ Any instances of a header that involve greater specificity of styles beyond
 what is found in typography.scss should @extend from there.
 */
 
-h1.dark {
+h1 {
 	@extend h1;
 
-  font-size: $h1-dark-font-size;
-  color: $medium-gray;
-  margin-bottom: $base-font-size*1.5;
+	&.dark {
+		color: $medium-gray;	
+	}
+  
+  &.small {
+  	font-size: $h1-small-font-size;
+  }
+
+  &.mid-page-cta {
+	  margin-bottom: $base-font-size*1.5;
+	}
+
+	&.center {
+		text-align: center;
+	}
 }
 
 h3.capitalize {
