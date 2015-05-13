@@ -30,14 +30,14 @@
 
   @include media($tablet) {
     width: 70%;
-    max-width: 540px;
+    max-width: 700px;
   }
 }
 
 %cover-photo-text {
   color: $tws-white;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.25em;
 }
 
 /* Cover Photo Styles */
@@ -48,7 +48,7 @@
     @include padding(50px 0);
 
     @include media($tablet) {
-      @include padding(100px 0);
+      @include padding(110px 0);
     }
   }
 
@@ -60,7 +60,16 @@
 
 .cover-photo-lede {
   @extend %cover-photo-text;
+  margin-bottom: $base-font-size/2;
   font-weight: 600;
+}
+
+.cover-photo-subtext {
+  @extend %cover-photo-text;
+  margin-bottom: $base-font-size*2;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 400;
 }
 
 .cover-photo-body {
@@ -71,8 +80,9 @@
 }
 
 .cover-photo-cta {
-  margin-top: 1.0em;
-  @include padding(1.75em 1.5em);
   width: 80%;
-  font-weight: 600;
+
+  @include media($tablet) {
+    width: 50%;
+  }
 }

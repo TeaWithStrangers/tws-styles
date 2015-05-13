@@ -1,11 +1,11 @@
 header {
   @include clearfix();
+  background: rgba($tws-yellow, .87);
 
   .container {
-    $vpadding: 0.25em;
+    $vpadding: 1em;
     padding-top: $vpadding;
     padding-bottom: $vpadding;
-    border-bottom: 1px solid $light-gray;
   }
 
   .nav-list {
@@ -17,11 +17,10 @@ header {
 
 .tws-logo-type {
   font-family: "Nanum Pen Script";
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #333;
+  color: $tws-white;
+
   @include media($desktop) {
     float: left; 
     line-height: 39px;

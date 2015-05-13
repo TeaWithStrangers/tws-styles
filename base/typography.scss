@@ -18,23 +18,23 @@ h5,
 h6 {
   font-family: $header-font-family;
   line-height: $header-line-height;
+  font-weight: 600;
+  margin: 0;
 }
 
 h4,
 h5,
 h6 {
   font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 h1 {
   font-size: $h1-font-size;
-  font-weight: 900;
 }
 
 h2 {
   font-size: $h2-font-size;
+  color: $tws-orange;
 }
 
 h3 {

@@ -14,7 +14,8 @@ should @extend from this class.
   font-size: $base-font-size;
   font-weight: bold;
   line-height: 1;
-  padding: 0.75em 1em;
+  padding: 1em 1.5em;
+  letter-spacing: 2px;
   text-decoration: none;
 
   &:hover {
@@ -59,7 +60,7 @@ button, input[type="submit"] {
   @extend %button;
 
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   a { color: $tws-white; }
 
   &.green {
@@ -74,6 +75,9 @@ button, input[type="submit"] {
     @include button-color($tws-orange);
   }
 
+  &.yellow {
+    @include button-color($tws-yellow);
+  }
 
   &.full-width {
     width: 100%;
