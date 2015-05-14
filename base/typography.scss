@@ -55,6 +55,9 @@ h6 {
 
 p {
   margin: 0 0 ($base-spacing / 2);
+  &.last {
+    margin-bottom: $base-font-size*1.5;
+  }
 }
 
 a {
