@@ -91,6 +91,9 @@ blockquote {
   color: lighten($base-font-color, 15);
   margin: $base-spacing 0;
   padding-left: $base-spacing / 2;
+  &.wide {
+    padding-left: $base-font-size *2;
+  }
 }
 
 cite {
