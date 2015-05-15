@@ -36,7 +36,22 @@ a.tws-logo-type {
   font-weight: 600;
   letter-spacing: 1px;
   text-align: right;
-  a { color: $tws-white; }
+  a {
+    color: $tws-white;
+
+    &.sign-up-emphasis {
+      padding: $base-font-size/2 $base-font-size;
+      background-color: $tws-white;
+      border: 2px solid $tws-white;
+      border-radius: $base-border-radius;
+      color: $tws-yellow;
+
+      &:hover {
+        color: $tws-white;
+        background: none;
+      }
+    }
+  }
 
   @include media($uncollapse-at) {
     float: left;
