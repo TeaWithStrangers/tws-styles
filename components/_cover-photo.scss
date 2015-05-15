@@ -1,8 +1,8 @@
 @mixin cover-photo($vertical-image, $horizontal-image: null, $gradient: null) {
   $horizontal-image: $vertical-image !default;
   $gradient: linear-gradient(to bottom,
-                             rgba($tws-medium-gray, 0),
-                             rgba($dark-gray, 20) 100%) !default;
+                             rgba($tws-yellow, .87),
+                             rgba($tws-yellow, .87), 100%) !default;
 
   @include background-image($gradient, $vertical-image);
 
@@ -13,7 +13,7 @@
   background-position: 50% 50%, 0%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  margin: auto;
   max-width: 100%;
 }
 
