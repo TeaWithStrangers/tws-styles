@@ -8,6 +8,10 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
+  strong {
+    font-weight: 600;
+  }
 }
 
 h1,

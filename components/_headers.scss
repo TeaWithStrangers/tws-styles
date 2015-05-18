@@ -9,9 +9,9 @@ h1 {
 	@extend h1;
 
 	&.dark {
-		color: $medium-gray;	
+		color: $medium-gray;
 	}
-  
+
   &.small {
   	font-size: $h1-small-font-size;
   }
@@ -25,10 +25,12 @@ h1 {
 	}
 }
 
-h3.capitalize {
-	@extend h3;
+h3 {
+	&.capitalize {
+		@extend h3;
 
-	text-transform: uppercase;	
+		text-transform: uppercase;
+	}
 
 	&.center {
 		text-align: center;
