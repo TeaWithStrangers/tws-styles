@@ -1,6 +1,7 @@
 header {
   @include clearfix();
   background: rgba($tws-yellow, .87);
+  position: relative;
 
   .container {
     $vpadding: 1em;
@@ -37,5 +38,22 @@ header {
 
   @include media($desktop) {
     display: none;
+  }
+}
+
+.flash {
+  @extend h3;
+
+  background: $tws-yellow;
+  padding: .5em 1em;
+  border: 2px solid $tws-white;
+  border-right: none;
+  border-left: none;
+  color: $tws-white;
+  width: 100%;
+  text-align: center;
+
+  &.alert {
+    background: $tws-orange;
   }
 }
