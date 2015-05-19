@@ -1,9 +1,6 @@
 .sharing-info {
   clear: both;
-  margin-top: 50px;
-
-  @include span-columns(8 of 12);
-  @include shift(2);
+  margin-bottom: $base-font-size;
 
   h2 {
     margin-bottom: $base-font-size;
@@ -12,17 +9,24 @@
 
 .sharing-box {
   clear: both;
-  border: 2px solid #F0F0F1;
+  border: $base-border;
+  border-radius: $base-border-radius;
   margin: auto;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: $tws-white;
+
+  @include media($tablet) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+  }
 
   @include media($desktop) {
-    width: 465px;
+    @include span-columns(8 of 12);
+    @include shift(2);
   }
 
   .sharing-preview {
-    border: 1px solid #FCE0D7;
+    border: 1px solid $tws-yellow;
     border-radius: 4px;
 
     -webkit-animation-duration: 1s;
@@ -49,8 +53,8 @@
     }
 
     .sharing-preview-text {
-      padding: 20px;
-      font-size: 12pt;
+      padding: 15px;
+      font-size: $base-font-size*.9;
       line-height: 1.5em;
     }
   }
@@ -108,7 +112,8 @@
   }
 
   .sharing-elsewhere {
-    margin: 20px 0 30px 0;
+    margin: 20px 0 0 0;
+    overflow: auto;
     border-top: 1px solid #CCC;
     padding-top: 20px;
     font-size: 12pt;
