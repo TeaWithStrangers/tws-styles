@@ -12,7 +12,7 @@ should @extend from this class.
   color: white;
   display: inline-block;
   font-size: $base-font-size;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1;
   padding: 1em 1.5em;
   letter-spacing: 2px;
@@ -49,6 +49,27 @@ $hover-color - (Optional): The :hover color
 }
 
 /*
+Sets button's inverted state and undoes hover states when a button is in 
+a 'selected' state. This is, at the moment, relevant to host interest,
+and tea time sign up buttons. 
+*/
+
+@mixin inverted-button($base-color, $hover-color: null) {
+  $hover-color: darken($base-color, 5) !default;
+  background-color: transparent;
+  border: 2px solid $base-color;
+  color: $base-color;
+  position: relative;
+  cursor: default;
+  opacity: 1;
+
+  &:hover {
+    border-color: $hover-color;
+    color: $hover-color;
+  }
+}
+
+/*
 The base button for all forms and calls-to-action. Text is centred by default.
 
 :hover - The hover state
@@ -80,6 +101,10 @@ button, input[type="submit"] {
 
   &.yellow {
     @include button-color($tws-yellow);
+  }
+
+  &.gray {
+    @include button-color($tws-medium-gray);
   }
 
   &.fb-blue {
