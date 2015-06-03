@@ -1,0 +1,46 @@
+/*
+
+Stylesheet for all things related to presentation of 
+host profiles.
+
+*/
+
+.photo-container {
+
+	@include media($tablet) {
+		margin-top: -5em;
+
+		@include span-columns(4 of 12);
+	}
+
+	.host-photo {
+		background: $tws-white;
+		border: $base-border;
+		padding: .75em .75em 3em;
+
+		.host-img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.host-bio {
+
+	@include media($tablet) {
+		@include span-columns(8 of 12);
+		@include omega(2n);
+	}
+
+	.bio-section {
+		margin-bottom: 1em;
+
+		p.placeholder {
+			color: lighten($tws-medium-gray,15);
+		}
+	}
+}
+
+.host-teas {
+	clear: both;
+}
