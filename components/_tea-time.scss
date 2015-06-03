@@ -6,6 +6,8 @@ tea times across the website.
 */
 
 .tt-set-container {
+	overflow: auto;
+	clear: both;
 
 	.tt-container {
 		margin-top: 1em;
