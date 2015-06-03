@@ -20,9 +20,6 @@ h1 {
 	  margin-bottom: $base-font-size*1.5;
 	}
 
-	&.center {
-		text-align: center;
-	}
 }
 
 h3 {
@@ -32,7 +29,25 @@ h3 {
 		text-transform: uppercase;
 	}
 
+	&.size-up {
+		font-size: 1.25em;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
 	&.center {
 		text-align: center;
+	}
+	&.lightweight {
+		font-weight: 400;
+	}
+	&.light {
+		color: $tws-medium-gray;
+	}
+	&.boldweight {
+		font-weight: 600;
+	}
+	&.capitalize {
+		text-transform: uppercase;
 	}
 }
