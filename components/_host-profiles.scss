@@ -24,7 +24,7 @@ host profiles.
 	.host-photo {
 		background: $tws-white;
 		border: $base-border;
-		padding: .75em .75em 3em;
+		padding: 0.75em 0.75em 3em;
 
 		.host-img {
 			width: 100%;
@@ -46,7 +46,7 @@ host profiles.
 		margin-bottom: 1em;
 
 		p.placeholder {
-			color: lighten($tws-medium-gray,15);
+			color: lighten($tws-medium-gray, 15);
 		}
 	}
 }
@@ -58,6 +58,7 @@ host profiles.
 		margin-bottom: 1em;
 	}
 }
+
 .host-teas {
 	clear: both;
 	margin-bottom: 3em;
