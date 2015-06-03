@@ -135,7 +135,7 @@ tea times across the website.
 		text-transform: uppercase;
 		text-align: center;
 		color: $tws-medium-gray;
-    margin-bottom: $base-font-size/3;
+		margin-bottom: $base-font-size/3;
 	}
 
 }
@@ -166,19 +166,19 @@ tea times across the website.
 		width: 100%;
 
 		&:disabled {
-			@include inverted-button($base-button-color)
+			@include inverted-button($base-button-color);
 		}
 		
 		&.green:disabled {
-			@include inverted-button($tws-green)
+			@include inverted-button($tws-green);
 		}
 		
 		&.gray:disabled {
-			@include inverted-button($tws-medium-gray)
+			@include inverted-button($tws-medium-gray);
 		}
 
 		&.yellow:disabled {
-			@include inverted-button($tws-yellow)
+			@include inverted-button($tws-yellow);
 		}
 	}
 }
