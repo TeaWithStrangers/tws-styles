@@ -74,10 +74,10 @@
   }
 
   .sharing-facebook-button button {
-    background-color: #435F9D;
+    background-color: $fb-blue;
 
     &:hover {
-      background-color: #344987;
+      background-color: darken($fb-blue,10);
     }
   }
 
