@@ -5,9 +5,18 @@ host profiles.
 
 */
 
+.cover-photo.host-profile.city-banner {
+	margin-bottom: 0;
+
+	@include media($tablet) {
+		margin-bottom: 3em;
+	}
+}
+
 .all-bio-content {
 	overflow: auto;
 	margin-bottom: 2em;
+	margin-top: -3em;
 	
 	@include media($tablet) {
 		margin-top: -5em;
@@ -16,7 +25,8 @@ host profiles.
 
 .photo-container {
 	position: relative;
-
+	margin-bottom: 1em;
+	
 	@include media($tablet) {
 
 		@include span-columns(4 of 12);

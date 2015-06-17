@@ -44,6 +44,9 @@ h1, h2, h3, h4, h5, h6 {
 	&.light {
 		color: $tws-medium-gray;
 	}
+	&.white {
+		color: $tws-white;
+	}
 	&.boldweight {
 		font-weight: 600;
 	}
